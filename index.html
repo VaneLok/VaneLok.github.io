@@ -1,0 +1,271 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww30040\viewh16640\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+  <head>\
+    <meta charset="UTF-8" />\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />\
+    <meta name="author" content="Jennifer Amaya" />\
+    <meta\
+      name="description"\
+      content="Jennifer Amaya | Entry-Level Cybersecurity Analyst specializing in threat intelligence, compliance, security engineering, and project management. Security+ certified."\
+    />\
+    <meta\
+      name="keywords"\
+      content="Jennifer Amaya, Cybersecurity, Threat Intelligence, Security Operations, Risk Management, Compliance, Security Engineering, Project Management, Security+, IT Security"\
+    />\
+    <title>Jennifer Amaya - Cybersecurity Professional</title>\
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg" />\
+    <style>\
+      html,\
+      body \{\
+        height: 100%;\
+        margin: 0;\
+        padding: 0;\
+      \}\
+      canvas.scene \{\
+        position: fixed;\
+        top: 0;\
+        left: 0;\
+        width: 133%;\
+        height: 100%;\
+        transform: translateX(33%);\
+        z-index: 1;\
+      \}\
+      body \{\
+        font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI',\
+          Roboto, sans-serif;\
+        color: white;\
+        overflow-x: hidden;\
+      \}\
+      .logo \{\
+        position: absolute;\
+        top: 20px;\
+        left: 50%;\
+        transform: translateX(-50%);\
+        z-index: 100;\
+        color: white;\
+        font-size: 42px;\
+        text-align: center;\
+        white-space: nowrap;\
+        letter-spacing: 1px;\
+        font-weight: 700;\
+        text-shadow: 0 2px 8px rgba(0,0,0,0.35);\
+      \}\
+      .services \{\
+        position: absolute;\
+        top: 50%;\
+        left: 50%;\
+        transform: translate(-50%, -50%);\
+        z-index: 50;\
+        text-align: left;\
+        background-color: rgba(0, 0, 0, 0.55);\
+        padding: 40px;\
+        border-radius: 12px;\
+        max-width: 800px;\
+        width: 90%;\
+        box-shadow: 0 8px 32px rgba(0,0,0,0.25);\
+      \}\
+      .services ul \{\
+        list-style: none;\
+        padding: 0;\
+        margin: 0;\
+      \}\
+      .services li \{\
+        margin: 15px 0;\
+        position: relative;\
+      \}\
+      .services a \{\
+        color: white;\
+        text-decoration: none;\
+        font-size: 24px;\
+        transition: color 0.3s;\
+        display: block;\
+        cursor: pointer;\
+      \}\
+      .services a:hover \{\
+        text-decoration: underline;\
+      \}\
+      .services a::after \{\
+        content: '\uc0\u9660 ';\
+        float: right;\
+        transition: transform 0.3s;\
+      \}\
+      .services li.hovered > a::after \{\
+        transform: rotate(180deg);\
+      \}\
+      .services .subtext \{\
+        max-height: 0;\
+        overflow: hidden;\
+        transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;\
+        font-size: 18px;\
+        margin-top: 0;\
+        padding-left: 15px;\
+      \}\
+      .services li.hovered .subtext \{\
+        max-height: 500px;\
+        padding: 10px 15px;\
+      \}\
+      .social-contact \{\
+        position: absolute;\
+        bottom: 20px;\
+        left: 50%;\
+        transform: translateX(-50%);\
+        z-index: 100;\
+        display: flex;\
+        flex-direction: column;\
+        align-items: center;\
+        gap: 10px;\
+      \}\
+      .security-blog \{\
+        font-size: 36px;\
+        text-decoration: underline;\
+      \}\
+      .contact-links \{\
+        display: flex;\
+        align-items: center;\
+        justify-content: center;\
+        gap: 20px;\
+        flex-wrap: nowrap;\
+      \}\
+      .social-contact a \{\
+        color: white;\
+        text-decoration: none;\
+        font-size: 18px;\
+        display: flex;\
+        align-items: center;\
+        gap: 5px;\
+      \}\
+      .social-contact img \{\
+        width: 68px;\
+        height: auto;\
+        vertical-align: middle;\
+      \}\
+      @media screen and (max-width: 800px) \{\
+        .logo \{\
+          font-size: 24px;\
+          top: 10px;\
+        \}\
+        .services \{\
+          position: absolute;\
+          top: 50%;\
+          left: 50%;\
+          transform: translate(-50%, -50%);\
+          padding: 20px;\
+          max-width: 95%;\
+        \}\
+        .services a \{\
+          font-size: 18px;\
+        \}\
+        .services .subtext \{\
+          font-size: 16px;\
+        \}\
+        .social-contact \{\
+          gap: 10px;\
+        \}\
+        .social-contact img \{\
+          width: 34px;\
+        \}\
+        .security-blog \{\
+          font-size: 32px;\
+        \}\
+        .contact-links a \{\
+          font-size: 16px;\
+        \}\
+      \}\
+    </style>\
+    <script>\
+      document.addEventListener('DOMContentLoaded', function () \{\
+        const serviceItems = document.querySelectorAll('.services li');\
+\
+        let lastHoveredItem = null;\
+\
+        serviceItems.forEach((item) => \{\
+          item.addEventListener('mouseenter', function () \{\
+            if (lastHoveredItem && lastHoveredItem !== this) \{\
+              lastHoveredItem.classList.remove('hovered');\
+            \}\
+            this.classList.add('hovered');\
+            lastHoveredItem = this;\
+          \});\
+          item.addEventListener('mouseleave', function () \{\
+            this.classList.remove('hovered');\
+            lastHoveredItem = null;\
+          \});\
+        \});\
+      \});\
+    </script>\
+    <!-- Keep your Three.js script/module here for 3D background! -->\
+    <script\
+      type="module"\
+      crossorigin\
+      src="./assets/index-b7d38c76.js"\
+    ></script>\
+    <link rel="stylesheet" href="./assets/index-5884692c.css" />\
+  </head>\
+  <body>\
+    <canvas class="scene"></canvas>\
+    <div class="logo">Jennifer Amaya<br/>Cybersecurity Professional</div>\
+    <main>\
+      <div class="services">\
+        <ul>\
+          <li>\
+            <a href="#">Threat Intelligence & Analysis</a>\
+            <div class="subtext">\
+              Experienced in open-source, deep, and dark web research. I analyze threat patterns, monitor cybercriminal activity, and transform intelligence into actionable security recommendations.\
+            </div>\
+          </li>\
+          <li>\
+            <a href="#">Security Operations & Incident Response</a>\
+            <div class="subtext">\
+              Proficient in security event monitoring, identifying vulnerabilities, and supporting the response and remediation of cyber incidents. Detail-oriented in maintaining compliance and audit-readiness.\
+            </div>\
+          </li>\
+          <li>\
+            <a href="#">Risk & Compliance Management</a>\
+            <div class="subtext">\
+              Skilled at risk assessment, documentation, and policy implementation in regulated environments. I bridge the gap between technical teams and compliance requirements to ensure organizational security.\
+            </div>\
+          </li>\
+          <li>\
+            <a href="#">IT Infrastructure & Project Management</a>\
+            <div class="subtext">\
+              Over four years\'92 experience managing IT infrastructure, coordinating technical projects, and ensuring secure, efficient operations\'97from onboarding/offboarding to technical documentation.\
+            </div>\
+          </li>\
+          <li>\
+            <a href="#">Vulnerability Assessment</a>\
+            <div class="subtext">\
+              Conducting vulnerability scans, analyzing risk, and providing remediation guidance. Hands-on experience with tools such as Nessus, MITRE ATT&CK, and more.\
+            </div>\
+          </li>\
+          <li>\
+            <a href="#">Cybersecurity Certifications</a>\
+            <div class="subtext">\
+              CompTIA Security+ certified, with additional coursework and labs in threat intelligence, incident response, and risk management.\
+            </div>\
+          </li>\
+        </ul>\
+      </div>\
+    </main>\
+    <div class="social-contact">\
+      <a href="https://github.com/VaneLok" target="_blank" class="security-blog">Cybersecurity Portfolio</a>\
+      <div class="contact-links">\
+        <a href="https://www.linkedin.com/in/jennifer-amaya/" target="_blank">\
+          <img src="./img/linkedin-icon.png" alt="LinkedIn Profile Icon" />\
+        </a>\
+        <a href="https://github.com/VaneLok" target="_blank">\
+          <img src="./img/github-icon.png" alt="GitHub Profile Icon" />\
+        </a>\
+        <a href="mailto:jenniferamayavanessa@protonmail.com">\uc0\u55357 \u56551  Contact</a>\
+        <!-- Phone removed for privacy, add if needed -->\
+      </div>\
+    </div>\
+  </body>\
+</html>\
+}
